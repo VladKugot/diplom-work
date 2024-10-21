@@ -1,0 +1,132 @@
+@import '../mixins';
+
+.header {
+  height: 48px;
+  width: 100vw;
+  background-color: #9DC2D4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include on-desktop {
+    height: 64px;
+  }
+
+  &__logo {
+    height: 48px;
+
+    @include on-desktop {
+      height: 64px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    @include on-desktop {
+      gap: 40px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+
+  @include on-desktop {
+    gap: 100px;
+  }
+
+  &__obj {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    color: #031C3B;
+    font-weight: 800;
+    cursor: pointer;
+  }
+}
+
+.swithes {
+  &__main {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    margin-right: 8px;
+
+    @include on-desktop {
+      gap: 200px;
+      margin-right: 40px;
+    }
+  }
+
+  &__block {
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.button { 
+  border: none;
+  height: 16px;
+  width: 16px;
+  margin: 8px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #9DC2D4;
+
+  //@include hover(transform, scale(1.2));
+
+  &--language {
+    background-image: url(../../icon/language.svg);
+  }
+  
+  &--them {
+    background-image: url(../../icon/swithes.svg);
+    width: 18px;
+    height: 9px;
+  }
+
+  &--search {
+    background-image: url(../../icon/search.svg);
+  }
+
+  &--cart {
+    background-image: url(../../icon/cart.svg);
+  }
+
+  &--user {
+    background-image: url(../../icon/user.svg);
+  }
+
+  &--menu {
+    background-image: url(../../icon/menu.svg);
+  }
+
+  &--menu-active {
+    background-image: url(../../icon/menu-active.svg);
+  }
+
+  &--recipes {
+    background-image: url(../../icon/recipes.svg);
+  }
+
+  &--catalog {
+    background-image: url(../../icon/catalog.svg);
+  }
+}
