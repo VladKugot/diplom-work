@@ -81,6 +81,8 @@ export const Header = () => {
             <NavLink className='button button--search' to={`/search`}></NavLink>
             <NavLink className='button button--cart' to={`/cart`}></NavLink>
             <NavLink className='button button--user' to={`/user`}></NavLink>
+            <NavLink className='button button--user' to={`/user`}></NavLink>
+            <NavLink className='button button--user' to={`/user`}></NavLink>
           </div>
         )}
       </div>
