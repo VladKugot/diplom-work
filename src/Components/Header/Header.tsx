@@ -1,3 +1,4 @@
+import React from 'react';
 import './Header.scss';
 import { NavLink } from 'react-router-dom';
 import cn from 'classnames';
@@ -80,8 +81,6 @@ export const Header = () => {
           <div className="swithes__block">
             <NavLink className='button button--search' to={`/search`}></NavLink>
             <NavLink className='button button--cart' to={`/cart`}></NavLink>
-            <NavLink className='button button--user' to={`/user`}></NavLink>
-            <NavLink className='button button--user' to={`/user`}></NavLink>
             <NavLink className='button button--user' to={`/user`}></NavLink>
           </div>
         )}
