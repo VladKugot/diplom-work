@@ -90,7 +90,9 @@
   background-repeat: no-repeat;
   background-color: #9DC2D4;
 
-  //@include hover(transform, scale(1.2));
+  @include on-tablet {
+    @include hover(transform, scale(1.2));
+  }
 
   &--language {
     background-image: url(../../icon/language.svg);
